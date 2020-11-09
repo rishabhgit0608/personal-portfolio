@@ -1,0 +1,352 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+/* Navbar Styling */
+.max-width{
+    max-width: 100%;
+    padding: 0 80px;
+    margin: auto;
+}
+.navbar.scrolled {
+    background-color: crimson ;
+    transition: background-color 200ms linear;
+}
+.navbar.scrolled .max-width span{
+    color:white;
+}
+
+.navbar{
+    /* background-color: red; */
+    position: fixed;
+    width: 100%;
+    font-family:sans-serif;
+}
+.navbar .max-width{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 700;
+}
+.navbar .max-width span{
+    color:crimson;
+}
+.navbar .logo a {
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600px;
+}
+.navbar .menu{
+    display: flex;
+    
+    
+}
+.navbar .menu li{
+    list-style: none;
+    margin-left:45px;
+}
+.navbar .menu li a{
+    color: #fff;
+
+}
+.navbar .menu li a:hover{
+    color: crimson;
+    transition: color 0.3s ease-in;
+}
+.navbar.scrolled .menu li a:hover{
+    color: white;
+}
+
+
+/* Menu button styling */
+.menu-btn div{
+    width: 20px;
+    height: 2px;
+    background-color: white;
+    margin: 6px 0;
+    cursor: pointer;
+}
+.menu-btn{
+    display: none;
+}
+
+/* Home Section */
+
+.home{
+
+    display: flex;
+    background: url("https://source.unsplash.com/random") no-repeat center center/cover;
+    height: 100vh;
+    color:#fff;
+    min-height: 500px;
+    font-family:sans-serif;
+}
+
+.home .max-width{
+    margin:auto 0 auto 40px;
+}
+
+.home .home-content .text1{    
+    font-size: 27px;
+}
+
+.home .home-content .text2{    
+    font-size: 75px;
+    font-weight: 600;
+    margin-left:-3px
+}
+
+.home .home-content .text3{    
+    font-size: 40px;
+    margin: 5px 0;
+}
+.home .home-content a{
+    background: red;
+    color: #fff;
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border:2px solid red;
+    position: relative;
+    top: 21px;
+    transition: all 0.3s ease;
+}
+.home .home-content a:hover{
+    background: none;
+    color: #fff; 
+}
+.home .home-content .text3 span{    
+    color: red;
+    font-weight: 500;
+}
+
+@media (max-width:852px){
+    .max-width{
+        padding: 0 50px;
+
+    }
+    .navbar .menu{
+        position: fixed;
+        background: #111;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0px ;
+    }
+    .navbar .menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 75px;
+    }
+    .navbar .menu li {
+        margin: 20px 0px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+}
+    
+
+@media (max-width:796px){
+        .home .home-content .text1{    
+            font-size: 20px;
+        }
+        
+        .home .home-content .text2{    
+            font-size: 60px;
+            font-weight: 600;
+            margin-left:-3px
+        }
+        
+        .home .home-content .text3{    
+            font-size: 35px;
+            margin: 5px 0;
+        }
+
+    }
+    @media (max-width:690px){
+        .home .home-content .text1{    
+            font-size: 15px;
+        }
+        
+        .home .home-content .text2{    
+            font-size: 50px;
+            font-weight: 600;
+            margin-left:-3px
+        }
+        
+        .home .home-content .text3{    
+            font-size: 30px;
+            margin: 5px 0;
+        }
+
+    }
+    @media (max-width:576px){
+        .home .home-content .text1{    
+            font-size: 15px;
+        }
+        
+        .home .home-content .text2{    
+            font-size: 40px;
+            font-weight: 600;
+            margin-left:-3px
+        }
+        
+        .home .home-content .text3{    
+            font-size: 24px;
+            margin: 5px 0;
+        }
+
+    }
+@media (max-width:486px){
+        .home .home-content .text1{    
+            font-size: 10px;
+        }
+        
+        .home .home-content .text2{    
+            font-size: 30px;
+            font-weight: 600;
+            margin-left:-3px
+        }
+        
+        .home .home-content .text3{    
+            font-size: 16px;
+            margin: 5px 0;
+        }
+
+    }
+
+
+    /* about */
+.about{
+    font-family: 'Poppins ' , sans-serif;
+}
+.about .title{
+    font-family:  sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 3%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width:400px;
+    border-radius: 40%;
+    margin-top: 7%;
+}
+.about .about-content .right{
+    width: 55%;
+    font-family: 'Poppins',sans-serif;
+    padding: 43px;
+}   
+
+
+.about .about-content .right .text{
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-decoration: underline;
+    font-size: 1.7rem;
+}   
+.about .about-content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+@media (max-width:1046px){
+
+    .about .about-content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about .about-content .right {
+        width: 100%;
+    }
+
+}
+
+
+.skills .title{
+    font-family: sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 3%;
+}
+
+.skills .skillname{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 20px;
+}
+.skills .skillname div{
+    margin-top: 12px;
+    font-family:sans-serif;
+    font-weight: 500;
+}
+.skills .skillname div:hover{
+    color: red;
+    text-decoration: underline;
+    text-decoration-color: tomato;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .title{
+    font-family:sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: crimson;
+    font-weight: 700;
+    font-size: 2.4rem;
+    margin-top: 5%;
+    
+}
+.content form{
+    margin-top: 12px;
+}
+.content form input{ 
+    display: block;
+    margin: 12px auto;
+    width: 50%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1.2rem;
+}
+.content form button{ 
+    display: block;
+    margin: 12px auto;
+    width: 10%;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 1.2rem;
+    cursor: pointer;
+    background-color: crimson;
+    transition: all 0.3s ease;
+}
+.content form button:hover{ 
+   color: black;
+   background: none;
+}
+
+.footer{
+    background: black;
+    color: white;
+    text-align: center;
+    font-family:sans-serif;
+}
