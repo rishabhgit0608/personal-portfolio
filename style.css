@@ -243,6 +243,7 @@
     height: 350px;
     width:300px;
     margin-top: 7%;
+    border-radius: 55%;
     margin-left: 80px;
 }
 .about .about-content .right{
